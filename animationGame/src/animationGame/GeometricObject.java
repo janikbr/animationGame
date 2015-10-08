@@ -78,6 +78,31 @@ public void moveTo(Vertex pos)
  {
 	this.pos=pos;
  }
-}
+
+public void moveTo(double x, double y)
+ {
+	moveTo(new Vertex(x,y));
+ }
+
+public void moveAdd(Vertex v)
+ {
+	moveTo(pos.add(v));
+ }
+
+public boolean equals(Object thatObject)
+ {
+	if (thatObject instanceof GeometricObject)
+	 {
+		GeometricObject that =(GeometricObject)thatObject;
+		return this.love==that.love && this.hate==that.hate
+			&& this.pos.equals(that.pos);
+	 
+	 }
+	return false;
+ }
+
+} 
+
+
 
 

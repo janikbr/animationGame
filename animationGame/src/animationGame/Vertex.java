@@ -32,6 +32,8 @@ public class Vertex {
 		return new Vertex(x+v2.x,y+v2.y);
 	}
 	
+	
+	
 	public Vertex sub(Vertex v2){
 		return new Vertex(x-v2.x,y-v2.y);
 	}
